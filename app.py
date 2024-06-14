@@ -1,5 +1,4 @@
-from flask import Flask, render_template
-from flask import jsonify, request
+from flask import Flask, render_template, jsonify, request
 import nltk
 from nltk.stem import WordNetLemmatizer
 import numpy as np
