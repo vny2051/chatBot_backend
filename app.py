@@ -60,6 +60,10 @@ def get_response(ints, intents_json):
             break
     return result
 
+@app.route("/")
+def start():
+    return "Backend Running"
+
 @app.route('/chat', methods=['POST'])
 def chatbot_response():
     try:
