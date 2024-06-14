@@ -6,6 +6,7 @@ from keras.models import load_model
 import json
 import random
 import pickle
+nltk.download('wordnet')
 
 from flask_cors import CORS
 
@@ -84,5 +85,3 @@ def chatbot_response():
         print(f"Error during processing: {e}")
         return jsonify({"response": "Sorry, I couldn't process your request at the moment. Please try again later."})
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
